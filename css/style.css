@@ -1,0 +1,381 @@
+*{
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	font-family: 'Poppins', sans-serif;
+	text-transform: capitalize;
+	transition: all .3s cubic-bezier(.38,1.15,.7,1.12);
+}
+:root{
+    --blue:#3c6382;
+    --dark-blue:#0a3d62;
+}
+*::selection{
+    background:var(--dark-blue);
+    color:#fff;
+}
+a:hover{
+    text-decoration: none;
+}
+#header{
+	background-image: url('../images/background-img.jpg');
+	background-attachment: fixed;
+}
+.logo a{
+	color: var(--blue);
+	font-size: 1.6rem;
+}
+header{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    top:0; left:0;
+    z-index: 1000;
+}
+
+header .navbar a{
+    font-size: 18px;
+    margin-left: 5px;
+    padding:.3rem 1.5rem;
+    border-radius: .5rem;
+    color: #3c6382;
+}
+
+header .navbar a.active,
+header .navbar a:hover{
+    background: #3c6382;
+    color:#fff;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    text-decoration: none;
+}
+header #logo a{
+    color: #3c6382;
+    font-size: 35px;
+    font-weight: 600;
+}
+header #logo span{
+	color:#3c6382;
+}
+
+#menu{
+    font-size: 30px;
+    color: #3c6382;
+    cursor: pointer;
+    display: none;
+    margin-right: 5px;
+}
+#banner{
+	background-image: url('../images/home-bg.jpg');
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	min-height: 100vh;
+}
+#banner h1{
+	font-size: 3.2rem;
+	font-weight: 600;
+    color: var(--dark-blue);
+    font-family: 'Poppins', sans-serif;
+}
+#banner h3{
+	font-size: 2.5rem;
+    color: var(--blue);
+    font-weight: normal
+}
+#banner .btn{
+	background-color: var(--blue);
+	color: white;
+	letter-spacing: 0.03em;
+	box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 10%);
+	font-size: 1rem;
+
+}
+#banner .btn:hover{
+	background-color: var(--dark-blue);
+}
+.title h2{
+    text-transform: uppercase;
+    color: var(--blue);
+    font-size: 2.5rem;
+}
+.title h2::after{
+	content: "";
+	display: block;
+	width: 200px;
+	height: 5px;
+	margin: 10px auto;
+	border-radius: 5px;
+	background-color: var(--blue);
+}
+#Prevent .box img{
+	height: 10rem;
+    padding: 2rem;
+}
+#Prevent .box h4{
+	color: var(--blue);
+}
+#Prevent .box p{
+	color: var(--blue);
+	font-size: 0.95rem;
+}
+#Prevent .box:hover{
+	 box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+#Symptoms{
+	background-image: url('../images/background-img.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+}
+#Symptoms .main-symp img{
+	width: 43vh;
+}
+#Symptoms .symp img{
+	width: 13rem;
+    padding: 1rem;
+}
+#Symptoms .symp h5{
+	color: var(--blue);
+	font-weight: 600;
+}
+#Precuations .do-head{
+	background-color: var(--blue);
+	color: white;
+}
+#Precuations .do-head2{
+	background-color: #ff3300;
+	color: white;
+}
+#Precuations h5{
+	color: var(--blue);
+	font-weight: 600;
+}
+#Precuations img{
+	width: 8rem;
+}
+#Precuations p{
+	color: var(--blue);
+	font-size: 0.85rem;
+}
+#Precuations .prec-box{
+	border: .1rem solid rgba(0,0,0,.1);
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 10%);
+    border-radius: .5rem;
+}
+#Doctors{
+	background: url('../images/background-img.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+#Doctors .doc-card img{
+	margin: 1rem;
+    border-radius: 50%;
+    height: 13rem;
+    width: 13rem;
+    object-fit: cover;
+    background: var(--blue);
+}
+#Doctors .doc-card h5{
+	color: var(--blue);
+	font-weight: 600;
+}
+#Doctors .doc-card p{
+	color: var(--dark-blue);
+	font-size: 0.95rem;
+    line-height: 10px;
+}
+#Doctors .box{
+	border-radius: .5rem;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 10%);
+}
+#Doctors .social-icon{
+	border-top: 1px solid rgba(0,0,0,.1);
+}
+#Doctors .social-icon a{
+	border-radius: 50%;
+    height: 2.8rem;
+    width: 2.8rem;
+    line-height: 2.9rem;
+    font-size: 1.2rem;
+    background: #eee;
+    color: var(--blue);
+    transition: all 0.2s ease;
+}
+#Doctors .social-icon a:hover{
+	background-color: var(--blue);
+	color: white;
+	transform: rotate(360deg);
+}
+#Hand-Wash .main-symp img{
+	width: 55vh;
+}
+#Hand-Wash .symp img{
+	width: 11rem;
+    padding: 1rem;
+}
+#Hand-Wash .symp h5{
+	color: var(--blue);
+	font-weight: 600;
+}
+#sub-footer{
+	background: url('../images/background-img.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+#sub-footer h3{
+	color: var(--dark-blue);
+	font-weight: 600;
+}
+#sub-footer p{
+	color: var(--blue);
+}
+#sub-footer li{
+	list-style: none;
+}
+#sub-footer a{
+	color: var(--blue);
+}
+#footer{
+	background-color: var(--blue);
+	color: white;
+}
+#footer a{
+	color: white;
+}
+#footer a:hover{
+	color: var(--dark-blue);
+}
+.scroll-top{
+	position: fixed;
+    bottom: 3.5rem; 
+    right: .9rem;
+    z-index: 1000;
+}
+.scroll-top img{
+    width: 5rem;
+    animation: float 3s linear infinite;
+}
+@keyframes float{
+	0%,100%{
+		transform: translateY(0rem);
+	}
+	50%{
+		transform: translateY(-1.5rem);
+	}
+}
+
+
+/**********Media Query********/
+
+@media(max-width: 1024px){
+
+	#Doctors .social-icon a{
+		height: 2.2rem;
+	    width: 2.2rem;
+	    line-height: 2.2rem;
+	    font-size: 1.1rem;
+	}
+}
+@media(max-width: 991px){
+	#menu{
+        display: block;
+    }
+
+    header .navbar{
+        position: absolute;
+        z-index: 1000;
+        display: block;
+        text-align: center;
+        top:100%; left: 0;
+        width:100%;
+        background:#f1f5fe;
+        padding:2rem;
+        border-top: .1rem  solid rgba(0,0,0,.1);
+        transform-origin: top;
+        transform: scaleY(0);
+        opacity: 0;
+    }
+
+    header .navbar.nav-toggle{
+        transform: scaleY(1);
+        opacity: 1;
+    }
+
+    header .navbar a{
+        display: block;
+        margin:1.5rem 0;
+        font-size: 18px;
+    }
+
+    .fa-times{
+        transform: rotate(180deg);
+    }
+
+}
+@media(max-width: 768px){
+	.title h2{
+		font-size: 2rem;
+	}
+	.logo a {
+	    color: var(--blue);
+	    font-size: 1.3rem;
+	}
+	#banner h1 {
+    	font-size: 2.2rem
+	}
+	#banner h3 {
+    	font-size: 2rem;
+	}
+	#Symptoms .symp img {
+	    width: 9rem;
+	    padding: 1rem;
+	}
+	.do-head h3{
+		font-size: 1.4rem;
+	}
+	#Precuations img {
+	    width: 6rem;
+	}
+	#Doctors .doc-card img{
+		height: 7rem;
+    	width: 7rem;
+	}
+	#Hand-Wash .symp img {
+    width: 9rem;
+	}
+	#Hand-Wash .symp h5{
+		font-size: 1rem;
+	}
+	#Hand-Wash .main-symp img {
+    	width: 13rem;
+	}
+}
+@media(max-width: 425px){
+	#banner h1 {
+	    font-size: 2rem;
+	}
+	#banner h3 {
+    	font-size: 1.5rem;
+	}
+	#banner .btn{
+		font-size: 12px;
+	}
+	#Symptoms .main-symp img{
+		display: none;
+	}
+	#Precuations .prec-box{
+		text-align: center;
+	}
+	#Hand-Wash .main-symp img {
+		display: none;
+	}
+	.scroll-top img {
+    	width: 4rem;
+	}
+}
+@media(max-width: 375px){
+	.title h2 {
+    	font-size: 1.5rem;
+	}
+}
